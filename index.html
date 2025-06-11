@@ -1,31 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hover Button Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Hover Button Gallery | BtnStudio</title>
+  <meta name="description" content="Discover a collection of modern CSS hover buttons with copyable code. Free, open-source, and beautifully designed by BtnStudio.">
+  <meta name="keywords" content="css buttons, hover effects, btnstudio, html css gallery, web design">
+  <meta name="author" content="BtnStudio">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Hover Button Gallery</h1>
-  <div class="container">
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">BtnStudio</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="all-buttons.html">All Buttons</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Free CSS Hover Buttons</h1>
+    <p>Create beautiful, copyable buttons with no setup — just paste and go!</p>
+    <a href="all-buttons.html" class="hero-btn">Browse All Buttons</a>
+  </section>
+
+  <!-- Featured Buttons -->
+  <section class="container">
     <div class="button-box">
       <button class="btn btn1">Glow Hover</button>
-      <pre>&lt;button class="btn btn1"&gt;Glow Hover&lt;/button&gt;</pre>
+      <pre id="code1">&lt;button class="btn btn1"&gt;Glow Hover&lt;/button&gt;</pre>
+      <button class="copy-btn" onclick="copyCode('code1')">Copy Code</button>
     </div>
-
     <div class="button-box">
       <button class="btn btn2">Slide Hover</button>
-      <pre>&lt;button class="btn btn2"&gt;Slide Hover&lt;/button&gt;</pre>
+      <pre id="code2">&lt;button class="btn btn2"&gt;Slide Hover&lt;/button&gt;</pre>
+      <button class="copy-btn" onclick="copyCode('code2')">Copy Code</button>
     </div>
-
     <div class="button-box">
       <button class="btn btn3">Zoom Hover</button>
-      <pre>&lt;button class="btn btn3"&gt;Zoom Hover&lt;/button&gt;</pre>
+      <pre id="code3">&lt;button class="btn btn3"&gt;Zoom Hover&lt;/button&gt;</pre>
+      <button class="copy-btn" onclick="copyCode('code3')">Copy Code</button>
     </div>
+  </section>
 
-  </div>
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature-box">
+      <h3>100% Free</h3>
+      <p>Use any button without restrictions. Forever open-source.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Responsive Design</h3>
+      <p>Works across all devices — phones, tablets, desktops.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Easy to Copy</h3>
+      <p>Every button has a copy code button to use instantly.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p>© 2025 BtnStudio | Designed with ❤️ and CSS.</p>
+  </footer>
+
+  <!-- JavaScript for Copy Button -->
+
 
 </body>
 </html>
