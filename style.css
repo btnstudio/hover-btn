@@ -1,63 +1,180 @@
-body {
-  font-family: sans-serif;
-  text-align: center;
-  background: #f4f4f4;
+/* Reset & Global */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-h1 {
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar */
+header {
   background: #222;
   color: white;
-  padding: 20px;
-  margin: 0;
+  padding: 15px 0;
 }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+.nav-links a {
+  margin-left: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+}
+.hero-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Buttons Section */
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 40px;
+  gap: 20px;
+  padding: 40px 10px;
 }
 .button-box {
   background: white;
-  margin: 15px;
   padding: 20px;
+  width: 300px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  width: 250px;
 }
 .btn {
   padding: 12px 24px;
+  font-weight: bold;
   border: none;
   color: white;
-  font-weight: bold;
   cursor: pointer;
-  transition: 0.3s ease;
+  margin-bottom: 10px;
 }
-.btn1 {
-  background: blue;
-}
-.btn1:hover {
-  box-shadow: 0 0 10px blue;
-}
+.btn1 { background: #007bff; }
+.btn1:hover { box-shadow: 0 0 10px #007bff; }
+.btn2 { background: green; }
+.btn2:hover { transform: translateX(10px); }
+.btn3 { background: crimson; }
+.btn3:hover { transform: scale(1.1); }
 
-.btn2 {
-  background: green;
-}
-.btn2:hover {
-  transform: translateX(10px);
-}
-
-.btn3 {
-  background: crimson;
-}
-.btn3:hover {
-  transform: scale(1.1);
-}
-pre {
-  background: #eee;
-  text-align: left;
-  padding: 10px;
-  overflow-x: auto;
-  font-family: monospace;
+/* Copy Button */
+.copy-btn {
+  padding: 5px 10px;
+  background: #333;
+  color: white;
   font-size: 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.copy-btn:hover {
+  background: #555;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+  background: #fff;
+}
+.feature-box {
+  background: #f1f1f1;
+  padding: 20px;
+  width: 280px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.footer-links {
+  margin-bottom: 10px;
+}
+.footer-links a {
+  color: #ccc;
+  margin: 0 10px;
+}
+
+/* Forms */
+form {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+button[type="submit"] {
+  background: #28a745;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+button[type="submit"]:hover {
+  background: #218838;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
